@@ -59,7 +59,8 @@
                                 <a class="nav-link" href="#Contact_Section">Contact</a>
                             </li>
 
-                            <button class="btn btn-danger ms-lg-3 d-none d-lg-block" type="submit" data-bs-target="#Get_Started">
+                            <button class="btn btn-danger ms-lg-3 d-none d-lg-block" type="submit"
+                                data-bs-target="#Get_Started">
                                 Get Started
                             </button>
                         </ul>
@@ -135,7 +136,7 @@
         </section>
     </header>
 
-    <!-- -------------------------Get -->
+    <!-- -------------------------Get Started-------------------------- -->
 
     <main>
         <section id="Get_Started" class="container-fluid bg-img d-flex align-items-center">
@@ -148,8 +149,9 @@
                             <button class="btn btn-danger btn-lg px-4 px-lg-5 text-start" type="submit">
                                 Get Started
                             </button>
-                            <a class="d-flex align-items-center text-decoration-none" href="#">
-                                <img class="img-fluid" src="image/icons8-circled-play-button-100.png" alt="">
+                            <a class="d-flex align-items-center text-decoration-none" data-bs-toggle="modal"
+                                data-bs-target="#video_player" href="#">
+                                <img src="image/icons8-circled-play-button-100.png" width="50" alt="">
                                 <span class="text-white fs-5 ms-2">Watch Video</span>
                             </a>
                         </div>
@@ -157,6 +159,26 @@
                 </div>
                 </div>
             </section>
+
+            <div class="modal fade" id="video_player" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-dialog-centered">
+                    <div class="modal-content border-0">
+                        <div class="modal-header border-0">
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal">
+                            </button>
+                        </div>
+
+                        <div class="modal-body p-0">
+                            <video class="w-100" controls autoplay muted style="max-height:80vh; object-fit:cover;">
+                                <source src="https://www.pexels.com/download/video/6787896/" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
         </section>
 
         <section class="container-fluid clients_section">
@@ -488,7 +510,7 @@
             </section>
         </section>
 
-<!-- ------------------------Services Section------------------------------- -->
+        <!-- ------------------------Services Section------------------------------- -->
 
         <section id="Services_Section" class="container-fluid about_bg_section row px-lg-5">
             <section class="about_main_section m-0">
