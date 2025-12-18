@@ -1,23 +1,25 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-html,body{
+html,
+body {
     height: 100%;
     width: 100%;
 }
 
 /* ----------hearder------------ */
 
-.head_section{
+.head_section {
     height: 100px;
     display: flex;
     align-items: center;
     font-family: sans-serif;
 }
-.sitename{
+
+.sitename {
     font-size: 30px;
     font-weight: bolder;
 }
@@ -25,9 +27,9 @@ html,body{
 
 
 /* ------------main-------------- */
-.bg-img{
+.bg-img {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.694),rgba(0, 0, 0, 0.708),rgba(0, 0, 0, 0.717)),url(image/hero-bg.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.694), rgba(0, 0, 0, 0.708), rgba(0, 0, 0, 0.717)), url(image/hero-bg.jpg);
     background-size: cover;
     background-position: 50% 40%;
     background-repeat: no-repeat;
@@ -35,20 +37,21 @@ html,body{
 }
 
 
-.clients_section{
+.clients_section {
     height: auto;
     padding: 60px 0px;
     /* background-color: red; */
 }
 
-.about_bg_section{
+.about_bg_section {
     margin: 80px 0px;
     height: auto;
     padding: 80px 0px;
     background-color: #1b1b1b;
     transform: skewy(-3deg);
 }
-.about_main_section{
+
+.about_main_section {
     height: 80%;
     /* background-color: #1b1b1b; */
     /* padding-top: 60px; */
@@ -58,7 +61,7 @@ html,body{
 /* ---------stats section--------- */
 
 
-.stats_items{
+.stats_items {
     border-radius: 5px;
     position: relative;
     margin: 20px 15px;
@@ -66,7 +69,8 @@ html,body{
     padding: 30px 0px;
 
 }
-.starts_img{
+
+.starts_img {
     width: 50px;
     height: 50px;
     position: absolute;
@@ -79,23 +83,30 @@ html,body{
     padding: 10px;
 }
 
-.stats_items h2{
+.stats_items h2 {
     font-size: 40px;
     font-weight: bolder;
     /* margin-top: 20px; */
-}       
-.stats_items span{
+}
+
+.stats_items span {
     font-size: 20px;
     font-weight: 500;
     color: gray;
 }
 
 /* ---------pill section--------- */
-.pill_section{
+.pill_section {
     height: auto;
-}   
+}
 
 
 
 
 /* ---------portfolio section--------- */
+@media (max-width:576px) {
+
+    #pills-tab .nav-link {
+        padding: 6px 8px;
+    }
+}
